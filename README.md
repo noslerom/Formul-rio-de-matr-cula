@@ -1,3 +1,10 @@
+🚀 Demonstração Online
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=github)](https://noslerom.github.io/Formul-rio-de-matr-cula/)
+
+
+
+
 🌟 Estrelas do Amanhã
 Sistema de formulário de matrícula desenvolvido para facilitar o processo de inscrição de alunos de forma simples, rápida e organizada.
 
@@ -9,9 +16,7 @@ Este projeto foi desenvolvido com foco em:
 Interface amigável
 Organização dos dados cadastrados
 Melhor experiência para pais e encarregados de educação
-🚀 Demonstração Online
-Live Demo **
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=github)](https://noslerom.github.io/Formul-rio-de-matr-cula/)
+
 
 🛠️ Tecnologias Utilizadas
 HTML5
