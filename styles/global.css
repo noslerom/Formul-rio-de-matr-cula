@@ -14,7 +14,7 @@
     --txt-highlight: #e43a12;
 
     --surface-primary: #ffffff;
-    --surface-secondary: #fee7d6;
+    --surface-secondary: rgb(254, 231, 214);
     --surface-disabled: #e7e5e4;
     
     --stroke-default: #d6d3d1;
@@ -34,6 +34,7 @@
 
     --txt-h1: 600 2rem/120% var(--font-family);
     --txt-h2: 600 1.5rem/120% var(--font-family);
+    --h2: 600 1rem/1.25 var(--font-family);
     --txt-h3: 600 1.25rem/120% var(--font-family);
     --text: 400 1rem/1.5 var(--font-family);
     --text-sm: 400 0.875rem/1.5 var(--font-family);
@@ -43,6 +44,8 @@ body{
     overflow: hidden;
     font: var(--text);
     color: var(--txt-secondary);
+    display: flex;
+    justify-content: center;
 }
 
 h1,h2{

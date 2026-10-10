@@ -21,6 +21,193 @@
 
                 <h1>Formulário de matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+                <form action="" method="get">
+                    <div>
+                        <fieldset id="info-criança">
+                            <legend>Informações da criança</legend>
+                            <label for="nome"> Nome Completo</label>
+                            <input type="text" id="nome" name="nome" >
+
+                            <label for="data-nascimento"> Data de Nascimento</label>
+                            <input type="date" id="data-nascimento" name="data-nascimento" >
+
+                            <label for="sexo"> Sexo</label>
+                            <select name="sexo" id="sexo"  >
+                                <option value="" hidden></option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                            </select>
+
+                            <label for="info-medicas"> Informações Medicas</label>
+                            <textarea name="info-medicas" id="info-medicas" ></textarea>
+
+                            <label for="certidão"> Certidão de Nascimento</label>
+                            <label for="certidão" class="upload-box">
+                                <img src="assets/icons/cloud-upload.svg" alt="Icone de para subir arquivo na nuvem"     class="upload-icon">
+                                <p>Clique aqui para selecionar arquivos</p>
+                            </label>
+                            <input type="file" id="certidão" name="certidão" hidden>
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        <fieldset id="endereco">
+                            <legend>Endereço Residencial</legend>
+
+                            <div class="campo">
+                                <label for="cep">CEP</label>
+                                <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}">
+                                <span class="erro">
+                                    <img src="assets/icons/alert-circle.svg" alt="">
+                                    Insira um CEP válido 00000-000
+                                </span>
+                            </div>
+                        
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="rua">Rua</label>
+                                    <input type="text" id="rua" name="rua" disabled>
+                                </div>
+                            
+                                <div class="campo">
+                                    <label for="numero">Número</label>
+                                    <input type="text" id="numero" name="numero" pattern="[0-9]{1,5}">
+                                    <span class="erro">
+                                        <img src="assets/icons/alert-circle.svg" alt="">
+                                        Insira de 1 a 5 números
+                                    </span>
+                                </div>
+                            </div>
+                        
+                            <div class="linha">
+                                <div class="campo">
+                                    <label for="cidade">Cidade</label>
+                                    <input type="text" id="cidade" name="cidade" disabled>
+                                </div>
+                            
+                                <div class="campo">
+                                    <label for="estado">Estado</label>
+                                    <input type="text" id="estado" name="estado" disabled>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        <fieldset id="info-responsa">
+                            <legend>Informações do Responsável</legend>
+                            
+                            <label for="nome-responsa">Nome do responsável</label>
+                            <input style="margin-bottom: 0;" type="text" id="nome-responsa" name="nome-responsa">
+                            <p style="margin-bottom: 1.5rem;">Principal responsável legal e contato de emergência</p>
+
+                            <label for="contacto">Telefone</label>
+                            <input type="tel" id="contacto" name="contacto" pattern="^9[0-9][0-9]{7}$">
+                            <span class="erro">
+                                <img src="assets/icons/alert-circle.svg" alt="">
+                                Número inválido, siga o padrão 900000000.
+                            </span>
+                            
+                            <label for="email">E-mail</label>
+                            <input type="tel" id="contacto" name="contacto" pattern="^.+@gmail\.com$">
+                            <span class="erro">
+                                    <img src="assets/icons/alert-circle.svg" alt="">
+                                    Insira um E-mail válido, exemplo: teste@gmail.com
+                                </span>
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        <fieldset id="turno">
+                            <legend>Opções de matrícula</legend>
+
+                            <label for="turno">Selecione o turno do estudo:</label>
+                            <div>
+                                <div>
+                                    <input type="radio" name="turno" value="manhã">
+                                    <figure>
+                                        <img src="assets/icons/sun-cloud-02.svg" alt="">
+                                        <figcaption>Manhã</figcaption>
+                                    </figure>
+                                </div>
+                                <div>
+                                    <input type="radio" name="turno" value="tarde">
+                                    <figure>
+                                        <img src="assets/icons/sun-02.svg" alt="">
+                                        <figcaption>tarde</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset id="desporto">
+                            <label for="turno">Em qual esporte você gostaria de inscrever seu filho?</label>
+                            <div>
+                                <div>
+                                    <input type="radio" name="desporto" value="Futebol">
+                                    <figure>
+                                        <img src="assets/icons/football.svg" alt="">
+                                        <figcaption>Futebol</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="deporto" value="Baskete">
+                                    <figure>
+                                        <img src="assets/icons/basketball-02.svg" alt="">
+                                        <figcaption>Baskete</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="desporto" value="Natação">
+                                    <figure>
+                                        <img src="assets/icons/swimming.svg" alt="">
+                                        <figcaption>Natação</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="desporto" value="Yoga">
+                                    <figure>
+                                        <img src="assets/icons/yoga-02.svg" alt="">
+                                        <figcaption>Yoga</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="desporto" value="Volley">
+                                    <figure>
+                                        <img src="assets/icons/volleyball.svg" alt="">
+                                        <figcaption>Volley</figcaption>
+                                    </figure>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="desporto" value="Box">
+                                    <figure>
+                                        <img src="assets/icons/boxing-glove-01.svg" alt="">
+                                        <figcaption>Box</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" name="Aceito" value="Aceito todos os termos">
+                        <span>Declaro que li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong> da escola Estrela do Amanhã. </span>
+                    </div>
+
+                    <div class="submit">
+                        <button>Salvar respostas</button>
+                        <button type="submit">Fazer matrícula</button>
+                    </div>
+
+
+                </form>
             </div>
        </main>
 

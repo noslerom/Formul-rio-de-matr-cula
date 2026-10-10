@@ -1,0 +1,334 @@
+form{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    fieldset{
+        border: none;
+    }
+    
+    legend{
+        font: var(--h2);
+        color: var(--txt-primary);
+        margin-bottom: 1.5rem;
+    }
+
+    input, select{
+        width: 100%;
+        height: 3rem;
+        border-radius:  0.5rem;
+        border: 1px solid  var(--stroke-default);
+        margin-bottom: 1.5rem;
+        color: var(--txt-primary);
+        font: 500 1rem/1.5 var(--font-family);;
+        color: var(--txt-primary);
+        padding-inline: 1rem;
+    }
+
+    input:focus, select:focus, textarea:focus{
+        border: 1px solid  var(--stroke-highlight);
+        box-shadow: 4px 4px 16px rgb(254, 231, 214);
+        outline: none;
+    }
+
+    textarea{
+        width: 100%;
+        height: 7.5rem;
+        border-radius:  0.5rem;
+        border: 1px solid  var(--stroke-default);
+        margin-bottom: 1.5rem;
+        color: var(--txt-primary);
+        font: 500 1rem/1.5 var(--font-family);;
+        color: var(--txt-primary);
+        padding: 1rem;
+    }
+
+    #info-criança{
+        display: flex;
+        flex-direction: column;
+        
+            >.upload-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #d3d3d3;
+            border-radius: 10px;
+            padding: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #999;
+            height: 10rem;
+        }
+
+    
+
+        >.upload-box:hover {
+          border-color: var(--stroke-highlight);
+          background-color: #faf8f3;
+          color: var(--stroke-highlight);
+        }
+        >.upload-icon {
+          width: 40px;
+          opacity: 0.7;
+          margin-bottom: 10px;
+          transition: opacity 0.3s ease;
+        }
+        >.upload-box:hover .upload-icon {
+          opacity: 1;
+        }
+
+
+    }
+
+    #endereco{
+        .campo{
+        display: flex;
+        flex-direction: column;
+        }
+    
+        .campo label{
+            color: #666;
+            font-size: 14px;
+        }
+
+
+        .linha{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+
+        input:disabled{
+            background: #f2f2f2;
+            color: #777;
+        }
+    
+    }
+
+    #turno{
+        div{ 
+            margin-top: 0.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            
+            >div{
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                border: 1px solid var(--stroke-default);
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                height: 8rem;
+
+                &:hover{
+                border: 1px solid  var(--stroke-highlight);
+                box-shadow: 4px 4px 16px rgb(254, 231, 214);
+                outline: none;
+                    
+                }
+                
+                
+                
+
+                >input[type="radio"]{
+                    margin: 0;
+                    padding: 0;
+                    appearance: none; 
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    
+                    border-radius: 50%;
+                    cursor: pointer; 
+                    border: 1px solid var(--stroke-default);
+                    background-color: transparent;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    flex-shrink: 0;
+                    
+                }
+
+                input[type="radio"]:checked{
+                    border: 0px solid var(--stroke-highlight);
+                    background-image: url("../assets/icons/checkmark-circle-01.svg") ;
+                    border-color: #ff5722; 
+                }
+                 
+
+                >figure{
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    
+                    >img{
+                        width: 3rem;
+                        
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    #desporto{
+        display: block;
+        margin-top: 1.5rem;
+        
+        div{ 
+            margin-top: 0.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            
+            >div{
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                border: 1px solid var(--stroke-default);
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                height: 8rem;
+
+                &:hover{
+                border: 1px solid  var(--stroke-highlight);
+                box-shadow: 4px 4px 16px rgb(254, 231, 214);
+                outline: none;
+                    
+                }
+                
+                
+                
+
+                >input[type="radio"]{
+                    margin: 0;
+                    padding: 0;
+                    appearance: none; 
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    
+                    border-radius: 50%;
+                    cursor: pointer; 
+                    border: 1px solid var(--stroke-default);
+                    background-color: transparent;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    flex-shrink: 0;
+
+                }
+
+                input[type="radio"]:checked{
+                    border: 0px solid var(--stroke-highlight);
+                    background-image: url("../assets/icons/checkmark-circle-01.svg") ;
+                    border-color: #ff5722; 
+                }
+                 
+
+                >figure{
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    
+                    >img{
+                        width: 3rem;
+                        
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .check{
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+            span{
+                >strong{
+                    text-decoration: none;
+                    color: var(--stroke-highlight);
+                    
+                }  
+            }
+
+
+        >input[type=checkbox]{
+            
+            appearance: none;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--stroke-default);
+            padding: 0;
+            flex-shrink: 0;
+            align-self: flex-start;
+
+            
+            
+        }
+
+        >input[type=checkbox]:checked{
+            background-image: url(../assets/icons/checkmark-circle-01.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-color: transparent;
+            
+            
+            
+            
+        }
+    }
+
+    .submit{
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+
+        button{
+            height: 3rem;
+            width: 10.875rem;
+            font: 500 1rem/1.25 var(--font-family);
+            border: 1px solid var(--stroke-highlight);
+            border-radius: 0.5rem;
+            background: none;
+            color: var(--stroke-highlight);
+        }
+
+        button[type="submit"]{
+            background-color: var(--stroke-highlight);
+            color: #f2f2f2;
+        }
+    }
+    
+    input:is([type="email"], [type="text"], [type="tel"]):invalid {
+        border-color: var(--semantic-error);
+    } 
+
+    input:is([type="email"], [type="text"], [type="tel"]):focus:invalid {
+        box-shadow: none;
+    } 
+
+    .erro {
+    display: none;
+    color: #ff3333;
+    font-size: 0.875rem;
+}
+
+    input:is([type="email"], [type="text"], [type="tel"]):invalid:not(:placeholder-shown) + .erro {
+    display: block;
+}
+}
+    
+
+    
+    
