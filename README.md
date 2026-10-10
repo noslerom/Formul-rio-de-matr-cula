@@ -10,7 +10,8 @@ Interface amigável
 Organização dos dados cadastrados
 Melhor experiência para pais e encarregados de educação
 🚀 Demonstração Online
-Live Demo ** https://noslerom.github.io/Formul-rio-de-matr-cula/
+Live Demo **
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=github)](https://noslerom.github.io/Formul-rio-de-matr-cula/)
 
 🛠️ Tecnologias Utilizadas
 HTML5
